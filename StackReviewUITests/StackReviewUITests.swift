@@ -12,7 +12,7 @@ class StackReviewUITests: XCTestCase {
 
     var app: XCUIApplication!
     
-    var horizontalSizeClass: XCUIElement.SizeClass {
+    var horizontalSizeClass: XCUIUserInterfaceSizeClass {
         return app.windows.element(boundBy: 0).horizontalSizeClass
     }
     
