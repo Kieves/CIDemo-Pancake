@@ -53,16 +53,16 @@ class StackReviewUITests: XCTestCase {
         XCTAssertTrue(pancakeTitleText.exists, "The correct title text should be on screen")
     }
     
-//    func testPancakeHouseScreenHasScrollView(){
-//        app.navigationBars["Master"].buttons["Pancake Houses"].tap()
-//
-//        let tablesQuery = app.tables
-//        tablesQuery/*@START_MENU_TOKEN@*/.cells["Maison des Crêpes"].staticTexts["Maison des Crêpes"]/*[[".cells[\"Maison des Crêpes\"].staticTexts[\"Maison des Crêpes\"]",".staticTexts[\"Maison des Crêpes\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.swipeUp()
-//        tablesQuery/*@START_MENU_TOKEN@*/.cells["Ye Olde Pancake"].staticTexts["Ye Olde Pancake"]/*[[".cells[\"Ye Olde Pancake\"].staticTexts[\"Ye Olde Pancake\"]",".staticTexts[\"Ye Olde Pancake\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
-//
-//        XCTAssertEqual(app.scrollViews.count, 1)
-//    }
-//
+    func testPancakeHouseScreenHasScrollView(){
+        app.navigationBars["Master"].buttons["Pancake Houses"].tap()
+
+        let tablesQuery = app.tables
+        tablesQuery/*@START_MENU_TOKEN@*/.cells["Maison des Crêpes"].staticTexts["Maison des Crêpes"]/*[[".cells[\"Maison des Crêpes\"].staticTexts[\"Maison des Crêpes\"]",".staticTexts[\"Maison des Crêpes\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.swipeUp()
+        tablesQuery/*@START_MENU_TOKEN@*/.cells["Ye Olde Pancake"].staticTexts["Ye Olde Pancake"]/*[[".cells[\"Ye Olde Pancake\"].staticTexts[\"Ye Olde Pancake\"]",".staticTexts[\"Ye Olde Pancake\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+
+        XCTAssertEqual(app.scrollViews.count, 1)
+    }
+
     func testShowAndHideRWLogo(){
         
         let app = XCUIApplication()
